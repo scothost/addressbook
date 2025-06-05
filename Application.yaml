@@ -13,8 +13,8 @@ spec:
         app: project-k8s
     spec:
       containers:
-      - name: project-k8s
-        image: tampoohoonm/k8s:latest
+      - name: k8s
+        image: scothost/k8s:latest
         ports:
         - containerPort: 8080  
 
@@ -29,5 +29,5 @@ spec:
     app: project-k8s
   ports:
   - protocol: TCP
-    port: 8080
-    targetPort: 8080
+    port: 80
+    targetPort: 80
