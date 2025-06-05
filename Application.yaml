@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: project-k8s
-        image: tampoohoonm/project-k8s:latest
+        image: tampoohoonm/k8s:latest
         ports:
         - containerPort: 8080  
 
@@ -30,4 +30,4 @@ spec:
   ports:
   - protocol: TCP
     port: 80
-    targetPort: 8080 
+    targetPort: 80 
